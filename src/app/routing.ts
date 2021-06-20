@@ -1,16 +1,23 @@
 const BASE = {
-  ROOT: '/',
+  ROOT: '/table-view',
 }
 
-const DASHBOARD = {
-  ROOT: '/dashboard',
+const TABLEVIEW = {
+  ROOT: '/table-view',
+}
+
+const CHARTVIEW = {
+  ROOT: '/chart-view',
 }
 
 export const routerConfig = {
   BASE: {
     routerPath: BASE.ROOT,
   },
-  DASHBOARD: {
-    routerPath: DASHBOARD.ROOT,
+  CHARTVIEW: {
+    routerPath: CHARTVIEW.ROOT,
+  },
+  TABLEVIEW: {
+    routerPath: TABLEVIEW.ROOT,
   },
 }
