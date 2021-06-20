@@ -20,6 +20,7 @@ import {
   getSelectedPeriod,
   getSelectedType,
 } from './components/handlers'
+import { renderModalContent } from './components/modal-content'
 
 export const TableView = () => {
   const [state, dispatch] = useReducer(tableViewReducer, initialState)
@@ -94,8 +95,7 @@ export const TableView = () => {
         )}
       </Grid>
       <Modal title='Form' open={isModalVisible}>
-        <Text>Some form</Text>
-        <button onClick={() => dispatch({ type: ActionKind.handleModal})}>Close</button>
+        {renderModalContent(dispatch)}
       </Modal>
     </>
   )
