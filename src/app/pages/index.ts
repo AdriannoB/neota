@@ -1,1 +1,2 @@
-export * from './dashboard'
+export * from './chart-view'
+export * from './table-view'
