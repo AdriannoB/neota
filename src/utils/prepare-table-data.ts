@@ -1,5 +1,6 @@
 export const prepareTableData = (data: any) =>
   data.map((row: any) => ({
+    col0: row.gcm,
     col1: row.monthVals[0],
     col2: row.monthVals[1],
     col3: row.monthVals[2],

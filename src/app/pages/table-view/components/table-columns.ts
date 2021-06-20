@@ -1,5 +1,9 @@
 export const columns = [
   {
+    Header: 'GCM',
+    accessor: 'col0'
+  },
+  {
     Header: 'January',
     accessor: 'col1',
   },

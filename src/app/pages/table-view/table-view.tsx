@@ -12,8 +12,8 @@ export const TableView = () => {
     return await getApi({
       code: 'mavg',
       type: 'pr',
-      start: 1920,
-      end: 1939,
+      start: 1940,
+      end: 1959,
       country: 'HRV',
     })
   }
