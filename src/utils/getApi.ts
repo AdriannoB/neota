@@ -2,7 +2,7 @@ import axios from 'axios'
 
 type DataCode = 'mavg' | 'annualavg'
 
-type DataType = 'pr' | 'tas'
+type DataType = string
 
 interface ApiProps {
   code: DataCode
@@ -13,8 +13,6 @@ interface ApiProps {
 }
 
 const apiUrl = 'http://climatedataapi.worldbank.org/climateweb/rest/v1/country/'
-
-// rest annualavg/pr/1920/1939/HRV
 
 export const getApi = async ({ code, type, start, end, country }: ApiProps) => {
   return await axios

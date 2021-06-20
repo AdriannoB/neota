@@ -34,7 +34,7 @@ export type GridProps = GridPropsAlias &
   ColorProps &
   PositionProps
 
-export const Grid: FC<GridProps> = styled.div.attrs(({ gridGap = 9, gridRowGap = 9 }: GridProps) => ({
+export const Grid: FC<GridProps> = styled.div.attrs(({ gridGap = '2rem', gridRowGap = '2rem' }: GridProps) => ({
   gridGap,
   gridRowGap,
 }))`
