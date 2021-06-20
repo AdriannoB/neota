@@ -17,7 +17,7 @@ export const ModalBackground = styled(Grid).attrs(() => ({
 `
 
 export const ModalContent = styled(Grid).attrs(() => ({
-  p: 9,
+  p: '1.5rem',
   mt: [9, 12],
   tabIndex: 0,
   id: 'alert_dialog',

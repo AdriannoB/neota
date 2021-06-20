@@ -26,7 +26,7 @@ export const Modal = ({
       <Flex gridColumn={['1 / span 1', '2/ span 1']}>
         <ModalContent>
           <>
-            {title && <h3 id="dialog_label">{title}</h3>}
+            {title && <h3 id="dialog_label" style={{ margin: 0 }}>{title}</h3>}
             {children}
           </>
         </ModalContent>

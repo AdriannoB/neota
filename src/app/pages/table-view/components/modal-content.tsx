@@ -19,10 +19,13 @@ export const renderModalContent = (dispatch: any) => {
         <input type="text" placeholder='October' />
         <input type="text" placeholder='November' />
         <input type="text" placeholder='December' />
+        <button onClick={() => dispatch({ type: ActionKind.handleModal })}>
+          Close
+        </button>
+        <button onClick={() => dispatch({ type: ActionKind.handleModal })}>
+          Submit
+        </button>
       </Grid>
-      <button onClick={() => dispatch({ type: ActionKind.handleModal })}>
-        Close
-      </button>
     </>
   )
 }
